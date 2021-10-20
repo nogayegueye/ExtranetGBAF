@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body{ 
+	
+	background-image: url(https://img.freepik.com/vecteurs-libre/conception-fond-abstrait-blanc_23-2148825582.jpg?size=626&ext=jpg)  ;
+	font-family: 'Roboto', sans-serif;
+}
+
+header{
+		height:148px;
+		background-image:url(https://thumbs.dreamstime.com/b/banner-header-space-bubbles-cyan-blue-background-backdrop-wavy-netting-abstraction-bubble-circles-shiny-glossiness-83840401.jpg);
+  		border:1px solid #CCC;
+ 		width:100%px;
+ 		margin:0px auto;
+ 		position: relative;
+}
+
+p {
+	min-width: 200px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+
+	padding: 20px;
+	font-size: 1.3rem;
+	margin: 0;
+	background: #fff0;
+	resize: horizontal;
+}
+footer{
+		height:148px;
+		background-image:url(https://potagiste.com/wp-content/uploads/2014/12/footer-background-011.jpg);
+  		border:1px solid #CCC;
+ 		width:100%px;
+ 		margin:0px auto;
+ 		position: relative;
+}
+
+
+
+
+
