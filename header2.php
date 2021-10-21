@@ -1,5 +1,4 @@
 
-<!-- Header / comporte le logo, le nom prénom de la personne et le bouton de déconnexion -->
 <?php  
 	session_start(); // Démarrage de la session
 	require_once 'configuration.php'; // On inclut la connexion à la base de données

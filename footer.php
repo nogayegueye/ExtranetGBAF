@@ -9,9 +9,9 @@
 		<footer>
 
 			<div align="center" >
-				<p>
+				
 				 <a href="mentionlegale.php">Mentions légale</a>   | <a href="contact.php">Contact</a>
-				</p>
+				
 			</div>
 
 		</footer>

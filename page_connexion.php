@@ -3,8 +3,9 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<link rel="stylesheet" href="connexion.css">
+	<link rel="stylesheet" href="connexion.css">
 		<title>Connexion</title>
+		<?php include("header2.php") ?>
 		
 	</head>
 	<body>

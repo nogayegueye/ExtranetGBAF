@@ -25,7 +25,6 @@
  }
  ?>
 
-
 <!DOCTYPE html>
 <html>
 	<head>
@@ -58,7 +57,7 @@
 		<fieldset>
 						
 					<input type="hidden" name="idb" value="<?php echo $idb;  ?>">
-					<input type="hidden" name="islike" value="1">
+					<input type="hidden" name="like" value="1">
 					<input type="hidden" name="id_user" value="<?php if(isset($_SESSION['id_u'])){ echo $_SESSION['id_u'] ;}	 ?>">
 
 					
@@ -74,10 +73,10 @@
 				
 				
 		</form>	  
-		<form action="like.php" method="post">		
+		<form action="dislike.php" method="post">		
 				<fieldset>		
 					<input type="hidden" name="idb" value="<?php echo $idb;  ?>">
-					<input type="hidden" name="islike" value="0">
+					<input type="hidden" name="dislike" value="0">
 					<input type="hidden" name="id_user" value="<?php if(isset($_SESSION['id_u'])){ echo $_SESSION['id_u'] ;}	 ?>">
 
 					
