@@ -3,10 +3,9 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-	<link rel="stylesheet" href="connexion.css">
+		<link rel="stylesheet" type="text/css" href="connexion.css">
 		<title>Connexion</title>
-		<?php include("header2.php") ?>
-		
+				
 	</head>
 	<body>
 		<form action="trait_connect.php" method="POST">
@@ -33,14 +32,16 @@
 
 
 				<div align="center">
-					<button type="submit"> connexion </button>
-				</div>								
-				
-				
-				
-				</fieldset>	
+					<button type="submit"> connexion </button><br><br>
+					Vous ètes nouveau utilisateur:
+
+				</div>	<br>
+
+				<div align="center">
+				<a href="page_d'inscription.php"> s'inscrire</a>
+			</div>
+			</fieldset>	
 		</form>
-			
 	</body>
 	
 

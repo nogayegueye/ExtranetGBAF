@@ -40,11 +40,11 @@
                     header('Location: acceul.php');
                 
                 }else{ 
-                    header('Location: page_connexion.php?login_err=mot_de_passe'); die();
+                    header('Location: index.php?login_err=mot_de_passe'); die();
                 }
   	
    	}else{
-        header('Location: page_connexion.php'); die();
+        header('Location: index.php'); die();
     } // si le formulaire est envoyé sans aucune données²
 
 ?>

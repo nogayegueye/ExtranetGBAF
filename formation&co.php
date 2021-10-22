@@ -30,81 +30,45 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Page acteurs</title>
-		<link rel="stylesheet" href="acteur.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
 		<?php include("header.php") ?>
+		
 	</head>
 	<body>
+		<br>
 		<div class="images" align="center">
 			<img src="<?php echo "images/".$informationActeur['logo']; ?>" alt=logoacteur  style="height: 100px; width: 50%; display: block;">
 		</div>	
-		<div></div>
+		
 		<h2>
-			<strong>Bienvenue  sur <?php echo $informationActeur['acteur'];?></strong>
+			<U><strong>Bienvenue  sur <?php echo $informationActeur['acteur'];?></strong></U>
 		</h2>
-		<p style="color:black;">
+		<h3 style="color:black;">
 
 			<?php echo $informationActeur['description'];?>
 
-		</p>
+		</h3>
 
 		
 			
 
 	
-		<h2> Commentaire: </h2>
-		
-		<form action="like.php" method="post">	
+		<U><h2> Commentaire: </h2></U>
 		<fieldset>
-						
-					<input type="hidden" name="idb" value="<?php echo $idb;  ?>">
-					<input type="hidden" name="like" value="1">
-					<input type="hidden" name="id_user" value="<?php if(isset($_SESSION['id_u'])){ echo $_SESSION['id_u'] ;}	 ?>">
-
-					
-				<div align="right">
-					<button type="submit"><img src="images/likebis.png" title="like" width="30px" height="30px" /> </button>
-				<?php foreach ($countlike as $row1) {?>
-				<?php  print $row1["nombre"]  ;?> 
-				<?php }?>
-
-				</div>	
-
-		</fieldset>		
-				
-				
-		</form>	  
-		<form action="dislike.php" method="post">		
-				<fieldset>		
-					<input type="hidden" name="idb" value="<?php echo $idb;  ?>">
-					<input type="hidden" name="dislike" value="0">
-					<input type="hidden" name="id_user" value="<?php if(isset($_SESSION['id_u'])){ echo $_SESSION['id_u'] ;}	 ?>">
-
-					
-				<div align="right">
-					<button type="submit"><img src="images/dislikebis.png" title="dislike" width="30px" height="30px" />  </button>
-				<?php foreach ($countdislike as $row1) {?>
-				<?php  print $row1["nombre"]  ;?> 
-				<?php }?>
-
-				</div>	
-
-				</fieldset>
-				
-				
-		</form>
-
-			
+<table width="100%">	
+<tr>
+<td>	
 
 		<form action="commentaire.php" method="post">
 			
-				<fieldset>
+				
 					<input type="hidden" name="idb" value="<?php echo $idb;  ?>">
 					<input type="hidden" name="id_user" value="<?php if(isset($_SESSION['id_u'])){ echo $_SESSION['id_u'] ;}	 ?>">
 				<?php foreach ($countPost as $row1) {?>
-					<?php  print $row1["nombre"]  ;?>  Message:
+					<?php  print $row1["nombre"]  ;?> <U> Message:</U>
 					<?php }?>
 					<div>
-						<label for="commentaires">Message</label> 
+						<label for="commentaires"></label> 
 						<textarea type="text" name="commentaires" id="commentaires" required></textarea>
 					</div>
 
@@ -112,22 +76,56 @@
 				<div>
 					<button type="submit"> Envoyer </button>
 				</div>	
-				</fieldset>	
-				<?php // on affiche le nombre de commentaire dans la table post ?>
+				
+										
+		</form> 
+</td>
+<td align="right">
+		<form action="like.php" method="post">	
+		
+						
+					<input type="hidden" name="idb" value="<?php echo $idb;  ?>">
+					<input type="hidden" name="like" value="1">
+					<input type="hidden" name="id_user" value="<?php if(isset($_SESSION['id_u'])){ echo $_SESSION['id_u'] ;}	 ?>">
 
-							
-		</form>	
+					
+				<div >
+					<button type="submit"><img src="images/likebis.png" title="like" width="30px" height="30px" /> </button>
+				<?php foreach ($countlike as $row1) {?>
+				<?php  print $row1["nombre"]  ;?> 
+				<?php }?>
+
+				</div>	
 
 
 
+				
+		</form>	 
+		<form action="dislike.php" method="post">		
+						
+					<input type="hidden" name="idb" value="<?php echo $idb;  ?>">
+					<input type="hidden" name="dislike" value="0">
+					<input type="hidden" name="id_user" value="<?php if(isset($_SESSION['id_u'])){ echo $_SESSION['id_u'] ;}	 ?>">
+
+					
+				<div >
+					<button type="submit"><img src="images/dislikebis.png" title="dislike" width="30px" height="30px" />  </button>
+				<?php foreach ($countdislike as $row1) {?>
+				<?php  print $row1["nombre"]  ;?> 
+				<?php }?>
+
+				</div>	
+
+				
+				
+				
+		</form> 
+</td>
+</tr>	
+</table>
 
 
-	
-</br>
-
-
-
-<table border="1" width="100%">
+<table border="1" width="98%" align="center">
 	
 <tr>
 	<?php foreach ($comments as $rowc) { ?>
@@ -138,7 +136,9 @@
 
 	<?php } ?>
 
-</table>
+
+	</table>
+	</fieldset>
 
 	</body>
 	<?php include("footer.php") ?>

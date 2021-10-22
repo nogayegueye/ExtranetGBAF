@@ -1,6 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 .images { 
 	text-align: : center;
 	margin: auto;
 	 ;
 	
 } 
+
+body{ 
+	
+	background-image: url(https://previews.123rf.com/images/roystudio/roystudio1405/roystudio140500011/28490669-fond-blanc-texture-du-papier-froiss%C3%A9.jpg)  ;
+	font-family: 'Roboto', sans-serif;
+}
+header{
+		height:148px;
+		background-image:url(https://thumbs.dreamstime.com/b/banner-header-space-bubbles-cyan-blue-background-backdrop-wavy-netting-abstraction-bubble-circles-shiny-glossiness-83840401.jpg);
+  		border:1px solid #CCC;
+ 		width:100%px;
+ 		margin:0px auto;
+ 		position: relative;
+}
+button{
+
+	color:#eb7371;
+}

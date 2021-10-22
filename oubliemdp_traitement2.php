@@ -14,7 +14,7 @@ if(isset($_SESSION['id_u'])) {
       $insertmdp = $bdd->prepare("UPDATE compte SET mot_de_passe = ? WHERE id_user = ?");
       $insertmdp->execute(array($mot_de_passe, $_SESSION['id_u']));}
 
-      header('Location: page_connexion.php');
+      header('Location: index.php');
        
 }
  else {

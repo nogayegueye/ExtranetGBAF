@@ -43,7 +43,7 @@
  								'reponse' =>  $_POST['reponse']));
     
                             // On redirige avec le message de succès
-                            header ( 'Location:page_connexion.php' );die ();
+                            header ( 'Location:index.php' );die ();
       
                             } else { header ( 'Location: page_inscription.php?reg_err=reponse_length' ); die ();}
                   		} else { header ( 'Location: page_inscription.php?reg_err=question_length' ); die ();}

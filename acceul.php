@@ -15,7 +15,7 @@
 	</head>
 	<body> 
 			
-			<div align="center"><h1>Le GBAF </h1> </div>
+			<div align="center"><h1>le Groupement Banque-Assurance Français (GBAF) </h1> </div>
 			<h3>
 				Le GBAF est le représentant de la profession bancaire et des assureurs sur tous
 les axes de la réglementation financière française. Sa mission est de promouvoir
@@ -24,14 +24,14 @@ pouvoirs publics.
 			</h3>
 		
 		<h2>Le Groupement Banque Assurance Français (GBAF) est une fédération
-représentant les 6 grands groupes français
+représentant les quatres grands acteurs français
 		</h2> <br />
 
                     
 
 
 
-                        <table border="1" width="100%" >
+                        <table border="8" width="100%" >
   
          
 
@@ -48,8 +48,10 @@ représentant les 6 grands groupes français
                     	<div align="center">
                      <img src="<?php echo "images/".$desc['logo']; ?>"  style="height: 40px; max-width: 100%; display: block;">
                      </div>
-                 	</td>
-                    <td> <h3><?php echo $desc['acteur'];?></h3><br><p><?php echo $desc['description'];?></p></td>
+                 	
+                    <td> 
+                        <U><h3><?php echo $desc['acteur'];?></h3></U><br><p><?php echo $desc['description'];?></p></td>
+                    </td>
                     <td>
                     <div align="center">
                     <button><a href="formation&co.php?idb=<?php echo $desc['id_acteur']; ?>"> Lire la suite</a></button>

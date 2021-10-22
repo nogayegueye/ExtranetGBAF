@@ -8,12 +8,12 @@ $requeteCountlike = $bdd->query('select count(*) as nombre from vote where id_ac
 foreach ($requeteCountlike as $rowZ) {
     if ($rowZ['nombre'] >= 1) {
 
-     //   if ($_POST['dislike'] = 0) {
+     
             $reqlike = $bdd->prepare('UPDATE vote SET vote = 0 WHERE id_acteur='.$_POST['idb'].' and id_user='.$_POST['id_user'].'');
               $reqlike->execute();
 
                 header('location:formation&co.php?idb=' . $_POST['idb']);
-      //     }
+     
 
     } else {// On insère dans la base de données
 
